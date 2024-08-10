@@ -5,20 +5,20 @@ import time
 from functools import reduce
 from collections import Counter
 
-# def createExamples():
-#     numberArrayexamples = open ('numArEx.txt','a')
-#     numbersWeHave = range(0,10)
-#     versionWeHave = range(1,10)
+def createExamples():
+    numberArrayexamples = open ('numArEx.txt','a')
+    numbersWeHave = range(0,10)
+    versionWeHave = range(1,10)
 
-#     for eachNum in numbersWeHave:
-#         for eachVer in versionWeHave:
-#             imgFilePath = 'images/numbers/'+str(eachNum)+'.'+str(eachVer)+'.png'
-#             ei = Image.open(imgFilePath)
-#             eiar = np.array(ei)
-#             eiarl = str(eiar.tolist())
+    for eachNum in numbersWeHave:
+        for eachVer in versionWeHave:
+            imgFilePath = 'images/numbers/'+str(eachNum)+'.'+str(eachVer)+'.png'
+            ei = Image.open(imgFilePath)
+            eiar = np.array(ei)
+            eiarl = str(eiar.tolist())
 
-#             lineTowrite = str(eachNum)+'::'+str(eiarl)+'\n'
-#             numberArrayexamples.write(lineTowrite)
+            lineTowrite = str(eachNum)+'::'+str(eiarl)+'\n'
+            numberArrayexamples.write(lineTowrite)
 
 def whatNumIsThis(filePath):
     matchedAr = []
